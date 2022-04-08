@@ -1,0 +1,34 @@
+.positsion {
+    margin: auto;
+    width: auto;
+
+    padding: initial;
+    border-bottom: initial;
+    background: #f6f6f6;
+    padding: 10px;
+    margin: .8px;
+
+    text-decoration: none;
+}
+
+.description {
+    color: #1e191d;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.price {
+    color: #1e191df2;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.descriptionPrice {
+    text-decoration: none;
+}

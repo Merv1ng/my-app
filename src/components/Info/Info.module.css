@@ -1,0 +1,19 @@
+.info {
+    grid-area: i;
+    background-color: rgb(215, 213, 213);
+    margin: 0 auto;
+    width: 90%;
+    position: sticky;
+    top: 0;
+    padding: 0px;
+}
+
+.menu {
+    padding-left: 85%;
+}
+
+
+.basket img {
+    height: 30px;   
+    padding-left: 4%;
+}
