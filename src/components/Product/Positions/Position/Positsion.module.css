@@ -1,34 +1,21 @@
 .positsion {
-    margin: auto;
-    width: auto;
-
-    padding: initial;
-    border-bottom: initial;
-    background: #f6f6f6;
-    padding: 10px;
-    margin: .8px;
-
     text-decoration: none;
+    border-style:double;
+    padding: 3px
 }
 
 .description {
     color: #1e191d;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-align: center;
+    padding: 2px;
+    margin:  0px;
 }
 
 .price {
     color: #1e191df2;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    text-align: center;
-}
-
-.descriptionPrice {
-    text-decoration: none;
+    padding: 2px;
+    margin:  0px;
 }

@@ -1,23 +1,25 @@
 .header {
     grid-area: h;
+     padding-right: 5%;
+    text-align: right;
     background-color: #20232b;
-    padding: 0px;
 }
 
 .item {
-    padding-left: 5%;
+    
+    padding-right: 1%;
     text-decoration: none;
     color: white;
 }
 
 .active {
-    padding-left: 5%;
+    padding-right: 1%;
     text-decoration: none;
     color: rgb(201, 201, 201);
 }
 
 .headerInfo {
-    padding-left: 55%;
+    
     font-family: 'Open Sans';
     font-size: 11px;
     margin-top: 0.5%;

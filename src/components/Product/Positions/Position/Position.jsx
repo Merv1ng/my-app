@@ -4,15 +4,17 @@ const Positsion = (props) => {
   return (
 
     <div className={s.positsion}>
-      <a className={s.descriptionPrice} href="">
+
+      <div>
         {props.photo}
-        <div className={s.description}>
-          {props.description}
-        </div>
-        <div className={s.price}>
-          {props.price}
-        </div>
-      </a>
+      </div>
+      <div className={s.description}>
+        {props.description}
+      </div>
+      <div className={s.price}>
+        {props.price}
+      </div>
+
     </div>
   )
 }

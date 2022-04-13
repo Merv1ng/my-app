@@ -2,12 +2,12 @@ import Positsions from './Positions/Positsions';
 import s from './Product.module.css'
 
 
-const Product = () => {
+const Product = (props) => {
 
   return (
-    <div>
+    <div className={s.product}>
       {/* <div>Слайдер с рекламой</div>  */}
-      <Positsions />
+      <Positsions positsions={props.positsions}/>
     </div>
   )
 }
