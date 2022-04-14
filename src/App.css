@@ -2,6 +2,7 @@
   
   display: grid;
   text-decoration: none;
+  
 
   grid-template-rows: 25px 30px 10fr;
   grid-template-columns: 1fr;
@@ -12,11 +13,16 @@
     "p"
 }
 
+
 .app-wrapper-content {
   grid-area: p;
   background-color: #fcfafa;
   margin: 0 auto;
   width: 90%;
+}
+
+.app-wrapper a {
+  cursor: pointer;
 }
 
 

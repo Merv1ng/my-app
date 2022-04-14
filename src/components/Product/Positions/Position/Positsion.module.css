@@ -1,6 +1,6 @@
 .positsion {
     text-decoration: none;
-    border-style:double;
+    border-style: double;
     padding: 3px
 }
 
@@ -9,7 +9,7 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     padding: 2px;
-    margin:  0px;
+    margin: 0px;
 }
 
 .price {
@@ -17,5 +17,5 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     padding: 2px;
-    margin:  0px;
+    margin: 0px;
 }

@@ -2,7 +2,6 @@ import { NavLink } from 'react-router-dom';
 import s from './Info.module.css'
 
 
-
 const Info = () => {
     return (
         <div className={s.info}>

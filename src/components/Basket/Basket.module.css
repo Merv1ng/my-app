@@ -1,9 +1,15 @@
 .element {
     display: grid;
-
     grid-template-columns: 1fr 1fr 1fr;
     width: 40%;
     padding: 10px;
+}
+
+.basketContents {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Open Sans';
+    font-size: 18px;
 }
 
 .element img {
@@ -11,20 +17,24 @@
     height: 100px;
     margin: 10px;
     object-fit: cover;
+
 }
 
 .order {
-    width: 10%;
+    width: 12.5%;
     text-align: center;
     font-family: 'Open Sans';
-    font-size: 11px;
-    margin: 1%;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 1%;
     background-color: #319b42;
+
 }
 
 .item {
-    margin: 2%;
-    border-style: outset;
+    background-color: rgb(49, 49, 49);
+    font-size: 14px;
+    color: white;
 }
 
 a {

@@ -1,17 +1,13 @@
-
 .BasketPos {
-    border-style:double;
+    border-style: double;
     margin: 2px;
-    
 }
-
 
 .description {
     text-align: center;
     font-family: 'Open Sans';
     font-size: 12px;
     margin: 1%;
-
 }
 
 .price {

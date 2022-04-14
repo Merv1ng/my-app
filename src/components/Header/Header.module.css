@@ -1,15 +1,17 @@
 .header {
     grid-area: h;
-     padding-right: 5%;
+    padding-right: 5%;
     text-align: right;
     background-color: #20232b;
+    cursor: pointer;
 }
 
 .item {
-    
+
     padding-right: 1%;
     text-decoration: none;
     color: white;
+    
 }
 
 .active {
@@ -19,8 +21,12 @@
 }
 
 .headerInfo {
-    
+
     font-family: 'Open Sans';
     font-size: 11px;
     margin-top: 0.5%;
+}
+
+a {
+    cursor: pointer;
 }

@@ -1,19 +1,16 @@
 .positsions {
-    width: 100%;    
-    
-}
+    width: 100%;
 
+}
 
 .element {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-
 .element img {
     width: 200x;
     height: 300px;
     margin: 10px;
     object-fit: cover;
-    
 }
