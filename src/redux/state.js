@@ -65,33 +65,31 @@ let state = {
 
     reviewsElement: {
         review: [
-            {id:1 , message: 'bla bla '} ,
-            {id:2 , message: 'lal'} ,
+            { id: 1, message: 'bla bla ' },
+            { id: 2, message: 'lal' },
+        ],
+        newReviewsText: [
+            'Напишите свой отзыв'
         ]
     },
 };
 
-   
-   export let addReviews = (reviewsMessage) => {
-       debugger;
-        let newReviews = {
-            id:5 ,
-            message:reviewsMessage   
-        }
-        state.reviewsElement.review.push(newReviews);
-        rerenderEntireTree(state);
+
+export let addReviews = () => {
+    let newReviews = {
+        id: 5,
+        message: state.reviewsElement.newReviewsText
     }
+    state.reviewsElement.review.push(newReviews);
+    state.reviewsElement.newReviewsText = '';
+    rerenderEntireTree(state);
+}
 
-    
+export let updateNewReviewsText = (newTex) => {
 
-
-
-
-
-
-
-
-
+    state.reviewsElement.newReviewsText = newTex
+    rerenderEntireTree(state);
+}
 
 
 export default state;

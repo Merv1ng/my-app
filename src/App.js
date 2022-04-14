@@ -16,7 +16,11 @@ function App(props) {
         <Routes>
           <Route path="/product/*" element={<Product positsions={props.positsions}  />} />
           <Route path="/basket/*" element={<Basket baskets={props.baskets} />} />
-          <Route path="/elementScreen/*" element={<ElementScreen  review={props.review} addReviews = {props.addReviews}/>} />
+          <Route path="/elementScreen/*" element={<ElementScreen
+            review={props.review}
+             newReviewsText={props.newReviewsText} 
+             addReviews = {props.addReviews} 
+             updateNewReviewsText={props.updateNewReviewsText}/>} />
         </Routes>
       </div>
     </div>
