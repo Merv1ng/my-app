@@ -1,4 +1,6 @@
-import { rerenderEntireTree } from "../render";
+let rerenderEntireTree = () => {
+    console.log('')
+}
 
 let state = {
     positsionsPage: {
@@ -75,7 +77,7 @@ let state = {
 };
 
 
-export let addReviews = () => {
+export const addReviews = () => {
     let newReviews = {
         id: 5,
         message: state.reviewsElement.newReviewsText
@@ -85,11 +87,14 @@ export let addReviews = () => {
     rerenderEntireTree(state);
 }
 
-export let updateNewReviewsText = (newTex) => {
+export const updateNewReviewsText = (newTex) => {
 
     state.reviewsElement.newReviewsText = newTex
     rerenderEntireTree(state);
 }
 
+export const subscribe = (observer) => {
+    rerenderEntireTree = observer;
+}
 
 export default state;
