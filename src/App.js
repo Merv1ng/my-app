@@ -14,13 +14,11 @@ function App(props) {
       <Info />
       <div className='app-wrapper-content'>
         <Routes>
-          <Route path="/product/*" element={<Product positsions={props.positsions}  />} />
+          <Route path="/product/*" element={<Product positsions={props.positsions} />} />
           <Route path="/basket/*" element={<Basket baskets={props.baskets} />} />
           <Route path="/elementScreen/*" element={<ElementScreen
             review={props.review}
-             newReviewsText={props.newReviewsText} 
-             addReviews = {props.addReviews} 
-             updateNewReviewsText={props.updateNewReviewsText}/>} />
+            dispatch={props.dispatch} />} />
         </Routes>
       </div>
     </div>

@@ -1,3 +1,7 @@
+const ADD_REVIEWS = 'ADD-REVIEWS';
+const UPDATE_NEW_REVIEWS_TEXT = 'UPDATE-NEW-REVIEWS-TEXT';
+
+
 let store = {
     _state: {
         positsionsPage: {
@@ -49,7 +53,7 @@ let store = {
             baskets: [
                 {
                     id: 1,
-                    photo: <img src="https://sochi.mirplatev.ru/wa-data/public/shop/products/91/20/2091/images/2510/2510.280x400.jpg" alt="Anj"/>,
+                    photo: <img src="https://sochi.mirplatev.ru/wa-data/public/shop/products/91/20/2091/images/2510/2510.280x400.jpg" alt="Anj" />,
                     description: 'The dress 1',
                     price: 'Price 1',
                 },
@@ -72,31 +76,39 @@ let store = {
             ]
         },
     },
+    _callSubscriber() {
+        console.log('');
+    },
 
     getState() {
         return this._state;
 
     },
-    _callSubscriber() {
-        console.log('');
-    },
-    addReviews() {
-        let newReviews = {
-            id: 5,
-            message: this._state.reviewsElement.newReviewsText
-        }
-        this._state.reviewsElement.review.push(newReviews);
-        this._state.reviewsElement.newReviewsText = '';
-        this._callSubscriber(this._state);
-    },
-    updateNewReviewsText(newTex) {
-        this._state.reviewsElement.newReviewsText = newTex
-        this._callSubscriber(this._state);
-    },
     subscribe(observer) {
         this._callSubscriber = observer;
     },
+
+    dispatch(action) {
+        if (action.type === ADD_REVIEWS) {
+            let newReviews = {
+                id: 5,
+                message: this._state.reviewsElement.newReviewsText
+            }
+            this._state.reviewsElement.review.push(newReviews);
+            this._state.reviewsElement.newReviewsText = '';
+            this._callSubscriber(this._state);
+        }
+        else if (action.type === UPDATE_NEW_REVIEWS_TEXT) {
+            this._state.reviewsElement.newReviewsText = action.newTex
+            this._callSubscriber(this._state);
+        }
+    },
+
 }
+
+export const addReviewActionCreator = () => ({ type: 'ADD-REVIEWS' })
+
+export const updateNewReviwsTextActionCreator = (text) => ({ type: 'UPDATE-NEW-REVIEWS-TEXT', newTex: text })
 
 export default store;
 window.store = store;

@@ -15,8 +15,7 @@ let rerenderEntireTree = (state) => {
                     positsions={store.getState().positsionsPage.positsions}
                     review={store.getState().reviewsElement.review}
                     newReviewsText={store.getState().newReviewsText}
-                    addReviews={store.addReviews.bind(store)}
-                    updateNewReviewsText={store.updateNewReviewsText.bind(store)} />
+                    dispatch={store.dispatch.bind(store)} />
             </BrowserRouter>
         </React.StrictMode>,
         document.getElementById('root')

@@ -1,8 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { addReviewActionCreator, updateNewReviwsTextActionCreator } from "../../redux/state";
 import s from "./ElementScreen.module.css"
 import Reviews from "./Reviews";
 
+
+ 
 
 const ElementScreen = (props) => {
 
@@ -10,11 +13,12 @@ const ElementScreen = (props) => {
 
   let newReviewsElement = React.createRef();
 
-  let addReview = () => props.addReviews();
+  let addReview = () => props.dispatch (addReviewActionCreator());
 
   let onReviewsChange = () => {
     let text = newReviewsElement.current.value;
-    props.updateNewReviewsText(text)
+    let action = updateNewReviwsTextActionCreator(text);
+    props.dispatch(action);
   }
 
   return (
