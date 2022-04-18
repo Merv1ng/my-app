@@ -4,7 +4,6 @@ import s from './BasketPos.module.css'
 const BasketPos = (props) => {
 
     
-
     return (
         <div className={s.BasketPos}>
             <div>{props.photo}</div>

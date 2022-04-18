@@ -17,7 +17,6 @@ const ElementScreen = (props) => {
     props.updateNewReviewsText(text)
   }
 
-
   return (
     <div className={s.elementScreen}>
       <div>

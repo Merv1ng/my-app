@@ -8,9 +8,6 @@ const Basket = (props) => {
     
     let basketElements = props.baskets.map (b => <BasketPos photo={b.photo} description={b.description} price={b.price} />);
 
-
-    
-
     return (
         <div className={s.basket}>
             <h4 className={s.basketContents}> Содержимое корзины </h4>
