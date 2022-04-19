@@ -11,6 +11,6 @@ const Positsion = (props) => {
       <div className={s.description}> {props.description}</div>
       <div className={s.price}>  {props.price} </div>
     </div>
-  ) 
+  )
 }
 export default Positsion;

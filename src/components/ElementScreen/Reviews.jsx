@@ -6,10 +6,8 @@ const Reviews = (props) => {
     <div className={s.reviewsElement}>
       {props.message}
     </div>
-
   )
-
 }
 
-export default Reviews ;
+export default Reviews;
 
