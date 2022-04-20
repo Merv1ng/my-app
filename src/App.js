@@ -10,6 +10,7 @@ import Product from './components/Product/Product';
 function App(props) {
   return (
     <div className="app-wrapper">
+      <div></div>
       <Header />
       <Info />
       <div className='app-wrapper-content'>
