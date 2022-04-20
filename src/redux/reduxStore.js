@@ -7,6 +7,7 @@ let reducers = combineReducers ({
     positsionsPage:positsionsReducer ,
     basketPadge:basketReducer ,
     reviewsElement:reviewsReducer
+    
 });
 
 let store = createStore(reducers);  

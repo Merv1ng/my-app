@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { addReviewActionCreator, updateNewReviwsTextActionCreator } from "../../redux/reviewsReducer";
 import s from "./ElementScreen.module.css"
-import Reviews from "./Reviews";
+import Reviews from "../Review/Reviews";
 
 
 const ElementScreen = (props) => {
@@ -11,12 +11,11 @@ const ElementScreen = (props) => {
 
   let newReviewsElement = React.createRef();
 
-  let addReview = () => props.dispatch(addReviewActionCreator());
+  let onAddReview = () => props.addReview();
 
   let onReviewsChange = () => {
     let text = newReviewsElement.current.value;
-    let action = updateNewReviwsTextActionCreator(text);
-    props.dispatch(action);
+    props.updateNewReviewsElement(text)
   }
 
   return (
@@ -32,7 +31,7 @@ const ElementScreen = (props) => {
           className={s.reviewsTextarea} ref={newReviewsElement}
           value={props.newReviewsText} />
 
-        <div><button className={s.send} onClick={addReview}> отправить</button></div>
+        <div><button className={s.send} onClick={onAddReview}> отправить</button></div>
 
         <div className={s.reviewsElement}> {reviewsElement}</div>
       </div>
