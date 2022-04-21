@@ -1,4 +1,4 @@
-let initialState = { 
+let initialState = {
     positsions: [
         {
             photo: <img src="https://sochi.mirplatev.ru/wa-data/public/shop/products/91/20/2091/images/2510/2510.280x400.jpg" alt="" />,

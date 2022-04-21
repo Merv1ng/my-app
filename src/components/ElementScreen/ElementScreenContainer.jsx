@@ -1,31 +1,28 @@
-import React from "react";
+import { connect } from "react-redux";
 import { addReviewActionCreator, updateNewReviwsTextActionCreator } from "../../redux/reviewsReducer";
-import StoreContext from "../../StoreContext";
 import ElementScreen from "./ElementScreen"
 
 
-const ElementScreenContainer = (props) => {
-
-  return (
-    <StoreContext.Consumer  >
-      {(store) => {
-        let state = store.getState();
-
-        let addReview = () => store.dispatch(addReviewActionCreator());
-
-        let onReviewsChange = (text) => {
-          let action = updateNewReviwsTextActionCreator(text);
-          store.dispatch(action);
-        }
-
-        return <ElementScreen updateNewReviewsElement={onReviewsChange} addReview={addReview}
-          review={store.getState().reviewsElement.review} newReviewsText={store.getState().reviewsElement.newReviewsText} />
-
-      }
-      }
-    </StoreContext.Consumer>
-  )
+let mapStateToProps = (state) => {
+  return {
+    review: state.reviewsElement.review,
+    newReviewsText: state.reviewsElement.newReviewsText
+  }
 }
+
+
+let mapDispatchToPorps = (dispatch) => {
+  return {
+    updateNewReviewsElement: () => {
+      dispatch(addReviewActionCreator())
+    },
+    addReview: (text) => {
+      dispatch(updateNewReviwsTextActionCreator(text));
+    },
+  }
+}
+
+const ElementScreenContainer = connect(mapStateToProps, mapDispatchToPorps)(ElementScreen);
 
 
 export default ElementScreenContainer;

@@ -3,14 +3,13 @@ import reviewsReducer from './reviewsReducer'
 import positsionsReducer from './positsionsReducer'
 import basketReducer from './basketReducer'
 
-let reducers = combineReducers ({
-    positsionsPage:positsionsReducer ,
-    basketPadge:basketReducer ,
-    reviewsElement:reviewsReducer
-    
+let reducers = combineReducers({
+    positsionsPage: positsionsReducer,
+    basketPadge: basketReducer,
+    reviewsElement: reviewsReducer
 });
 
-let store = createStore(reducers);  
+let store = createStore(reducers);
 
 
 

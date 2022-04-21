@@ -1,6 +1,7 @@
 const ADD_REVIEWS = 'ADD-REVIEWS';
 const UPDATE_NEW_REVIEWS_TEXT = 'UPDATE-NEW-REVIEWS-TEXT';
 
+
 let initialState = {
     review: [
         { id: 1, message: '' },
