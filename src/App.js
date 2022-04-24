@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import Info from './components/Info/Info';
 import Product from './components/Product/Product';
 import ElementScreenContainer from './components/ElementScreen/ElementScreenContainer';
+import SearchModuleContainer from './components/SearchModule/SearchModuleContainer';
 
 
 function App(props) {
@@ -17,6 +18,8 @@ function App(props) {
           <Route path="/product/*" element={<Product positsions={props.positsions} />} />
           <Route path="/basket/*" element={<Basket baskets={props.baskets} />} />
           <Route path="/elementScreen/*" element={<ElementScreenContainer />} />
+          <Route path="/searchModule/*" element={<SearchModuleContainer />} />
+          
         </Routes>
       </div>
     </div>
@@ -24,3 +27,4 @@ function App(props) {
 }
 
 export default App;
+

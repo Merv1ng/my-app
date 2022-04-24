@@ -5,19 +5,20 @@ import ElementScreen from "./ElementScreen"
 
 let mapStateToProps = (state) => {
   return {
-    review: state.reviewsElement.review,
-    newReviewsText: state.reviewsElement.newReviewsText
+    review: state.reviewsPadge.review,
+    newReviewsText: state.reviewsPadge.newReviewsText
   }
 }
 
 
 let mapDispatchToPorps = (dispatch) => {
   return {
-    updateNewReviewsElement: () => {
-      dispatch(addReviewActionCreator())
+    updateNewReviewsElement: (text) => {
+      dispatch(updateNewReviwsTextActionCreator(text))
     },
-    addReview: (text) => {
-      dispatch(updateNewReviwsTextActionCreator(text));
+
+    addReview: () => {
+      dispatch(addReviewActionCreator());
     },
   }
 }

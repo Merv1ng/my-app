@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { addReviewActionCreator, updateNewReviwsTextActionCreator } from "../../redux/reviewsReducer";
 import s from "./ElementScreen.module.css"
 import Reviews from "../Review/Reviews";
 
