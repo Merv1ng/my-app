@@ -10,7 +10,6 @@ let mapStateToProps = (state) => {
   }
 }
 
-
 let mapDispatchToPorps = (dispatch) => {
   return {
     updateNewReviewsElement: (text) => {

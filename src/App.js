@@ -19,7 +19,6 @@ function App(props) {
           <Route path="/basket/*" element={<Basket baskets={props.baskets} />} />
           <Route path="/elementScreen/*" element={<ElementScreenContainer />} />
           <Route path="/searchModule/*" element={<SearchModuleContainer />} />
-          
         </Routes>
       </div>
     </div>

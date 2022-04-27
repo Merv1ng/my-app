@@ -1,8 +1,7 @@
 .app-wrapper {
-  
+
   display: grid;
   text-decoration: none;
-  
 
   grid-template-rows: 25px 30px 10fr;
   grid-template-columns: 1fr;
@@ -12,7 +11,6 @@
     "i"
     "p"
 }
-
 
 .app-wrapper-content {
   grid-area: p;
@@ -24,7 +22,3 @@
 .app-wrapper a {
   cursor: pointer;
 }
-
-
-
-/* #fcfafa */

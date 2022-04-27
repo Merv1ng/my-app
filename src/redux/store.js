@@ -12,5 +12,4 @@ let store = {
         this._state.reviewsElement = reviewsReducer(this._state.reviewsElement, action);
         this._callSubscriber(this._state);
     },
-
 }
