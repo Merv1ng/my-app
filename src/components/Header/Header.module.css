@@ -2,27 +2,23 @@
     grid-area: h;
     padding-right: 5%;
     text-align: right;
-    background-color: #20232b;
+    background-color:  #20232b;
     cursor: pointer;
 }
 
-.item {
-
+.nav {
     padding-right: 1%;
     text-decoration: none;
     color: white;
-    
+    transition: opasity 500ms ease;
 }
 
-.active {
-    padding-right: 1%;
-    text-decoration: none;
-    color: rgb(201, 201, 201);
+.nav:hover {
+    opacity: 0.5;
 }
+
 
 .headerInfo {
-
-    font-family: 'Open Sans';
     font-size: 11px;
     margin-top: 0.5%;
 }

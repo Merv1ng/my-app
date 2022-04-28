@@ -6,6 +6,7 @@ import Info from './components/Info/Info';
 import Product from './components/Product/Product';
 import ElementScreenContainer from './components/ElementScreen/ElementScreenContainer';
 import SearchModuleContainer from './components/SearchModule/SearchModuleContainer';
+import Footer from './components/Footer/Footer';
 
 
 function App(props) {
@@ -20,6 +21,7 @@ function App(props) {
           <Route path="/elementScreen/*" element={<ElementScreenContainer />} />
           <Route path="/searchModule/*" element={<SearchModuleContainer />} />
         </Routes>
+    <Footer/>
       </div>
     </div>
   );

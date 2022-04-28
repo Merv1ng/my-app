@@ -18,7 +18,7 @@ let SearchModule = (props) => {
             {
                 props.elements.map(e => <div key={e.id}>
                     <div >
-                        <NavLink to={'/elementScreen'}>
+                        <NavLink to={'/elementScreen/' + e.id}>
                             <img src={elementPhoto} alt={'Фото'} className={s.elementPhoto} />
                         </NavLink>
                     </div>

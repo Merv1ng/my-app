@@ -1,5 +1,13 @@
-.app-wrapper {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.app-wrapper {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   display: grid;
   text-decoration: none;
 
@@ -10,6 +18,7 @@
     "h"
     "i"
     "p"
+    
 }
 
 .app-wrapper-content {

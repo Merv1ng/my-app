@@ -6,9 +6,9 @@ const Header = () => {
     return (
         <header className={s.header}>
             <div className={s.headerInfo}>
-                <NavLink className={navData => navData.isActive ? s.active : s.item} to="/searchModule">Поиск</NavLink>
-                <NavLink className={navData => navData.isActive ? s.active : s.item} to="URL">Контакты</NavLink>
-                <NavLink className={navData => navData.isActive ? s.active : s.item} to="/product">Каталог</NavLink>
+                <NavLink className={s.nav} to="/searchModule">Поиск</NavLink>
+                <NavLink className={s.nav} to="URL">Контакты</NavLink>
+                <NavLink className={s.nav} to="/product">Каталог</NavLink>
             </div>
         </header >
     )
